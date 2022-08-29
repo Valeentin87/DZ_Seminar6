@@ -5,7 +5,7 @@ int NPositive = InputPositiveNumber(N);
 Console.WriteLine($"количество положительных чисел из введенных равно {NPositive}");
 int InputPositiveNumber(int Nnumber)
 {
-    int Positive = 0;
+    int positive = 0;
     int[] array = new int[Nnumber];
     for(int i = 0; i < Nnumber; i++)
     {
@@ -13,10 +13,10 @@ int InputPositiveNumber(int Nnumber)
         array[i] = Convert.ToInt32(Console.ReadLine());
         if(array[i] > 0)
         {
-            Positive++;
+            positive++;
         }
 
     }
-    return Positive;
+    return positive;
 }
 
