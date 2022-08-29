@@ -13,6 +13,14 @@ string intersection = СoordinatesIntersection(b1, k1, b2, k2);
 Console.WriteLine(intersection);
 string СoordinatesIntersection(double b1, double k1, double b2, double k2)
 {
+    if (k1 == k2  & b1 != b2)
+    { 
+        return "линии с заданными параметрами не пересекаются, параллельны друг другу";
+    }
+    else if (b1 == b2 & k1 == k2)
+    {
+        return "линии совпадают";
+    }
     double X = (b2 - b1)/(k1 - k2);
     double Y = (k1*(b2 - b1)/(k1 - k2) + b1);
     string X1 = Convert.ToString(X);
